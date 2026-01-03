@@ -28,11 +28,25 @@ print()
 
 # list operations
 
-fruits = ["apple", "banana", "cherry"]
+fruits = ["apple", "banana", "cherry", "grape", "mango"]
 
-fruits.append("orange")
+fruits.append("orange")           # adding an item
 print(fruits)
-fruits.remove("banana")
+fruits.remove("banana")           # removing an item
 print(fruits)       
-print(fruits[0])
-print(fruits[-1])
+print(fruits[0])                  # accessing an item
+print(fruits[1:3])                # slicing the list
+fruits.sort()                     # sorting the list
+print(fruits)
+fruits.reverse()                  # reversing the list
+print(fruits)
+print(len(fruits))                  # length of the list
+
+print()
+
+# looping through a list
+for fruit in fruits:
+    print(fruit)       
+
+for fruit in fruits:
+    print(fruit , len(fruits))
