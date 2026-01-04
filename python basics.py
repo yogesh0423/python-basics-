@@ -165,4 +165,74 @@ else:
 print()
 
 # if-elif-else statement
- 
+score = 85
+if score >= 90:
+    print("Grade: A")
+elif score >= 80:
+    print("Grade: B")
+elif score >= 70:
+    print("Grade: C")
+else:
+    print("Grade: F")
+
+print('----------------------')
+
+
+# loops
+# for loop - iterating over a range of numbers 
+for i in range(5):
+    print(i)
+
+# it can also iterate over a string, list, tuple, dictionary, or set as shown above in previous examples
+print('--------')
+# break and continue
+for i in range(10):
+    if i == 5:
+        break               # exit the loop when i is 5
+    print(i)
+
+print('--------')
+
+for i in range(10):
+    if i % 2 == 0:
+        continue                # skip the current iteration and move to the next according to the condition
+    print(i) 
+
+print('----------------------')
+
+# while loop
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+
+i = 0  
+str1 = 'Beautiful'  
+  
+while i < len(str1):   
+    if str1[i] == 't':   
+        i += 1  
+        break  
+    print('Current Letter :', str1[i])   
+    i += 1 
+
+print('----------------------')
+
+
+# Class and Objects
+class Student:                                         # defining a class
+    def __init__(self, name, age):
+        self.name = name                               # initializing attributes
+        self.age = age
+
+    def display_info(self):                                # method to display student info
+        return f"Name: {self.name}, Age: {self.age}"
+    
+student1 = Student("Yogesh", 20)                       # creating an object
+print(student1.display_info())                         # calling a method
+
+
+print('----------------------')
+
+
+
