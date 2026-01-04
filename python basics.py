@@ -107,3 +107,62 @@ for key, value in student.items():   # looping through key-value pairs
 print('----------------------')
 
 
+# set operations
+colors = {"red", "green", "blue"}
+print(colors)
+print(type(colors))
+
+colors.add("yellow")            # adding an item
+print(colors)
+colors.remove("green")         # removing an item
+print(colors)
+print(len(colors))               # length of the set
+
+for color in colors:          # looping through a set
+    print(color)
+
+setA = {1, 2, 3, 4}
+setB = {3, 4, 5, 6}
+print(setA.union(setB))          # union
+print(setA.intersection(setB))   # intersection
+print(setA.difference(setB))     # difference
+print(setA.symmetric_difference(setB))  # symmetric difference
+
+print('----------------------')
+
+
+# Functions
+def hello(name):
+    return f"Hello, {name}!"
+print(hello("Yogesh"))
+print(hello(18))
+print(type(hello))
+
+def add(a, b):
+    return a + b
+A = add(5, 10)
+print(A)
+
+print('----------------------')
+
+
+# Conditional statements
+
+# if statement
+num = 10
+if num > 0:
+    print(f"{num} is positive")
+print()
+
+# if-else statement
+a = 5
+b = 10
+if a > b:
+    print(f"{a} is greater than {b}")
+else:
+    print(f"{b} is greater than {a}")
+
+print()
+
+# if-elif-else statement
+ 
