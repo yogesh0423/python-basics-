@@ -11,7 +11,9 @@ print(type(name))
 print(type(age))
 print(type(val))
 print(type(s))
-print()
+print('----------------------')
+
+
 # string functions
 
 text = "Hello, world!"
@@ -24,7 +26,8 @@ print(text.count("o"))
 print(text.find("lo"))   
 print(text.replace("world", "Python"))
 print(text.split(", "))
-print()
+print('----------------------')
+
 
 # list operations
 
@@ -42,7 +45,7 @@ fruits.reverse()                  # reversing the list
 print(fruits)
 print(len(fruits))                  # length of the list
 
-print()
+print('----------------------')
 
 # looping through a list
 for fruit in fruits:
@@ -50,3 +53,57 @@ for fruit in fruits:
 
 for fruit in fruits:
     print(fruit , len(fruits))
+
+print('----------------------')
+
+# tuple operations
+
+courses = ("Ba", "Bcom", "Bsc", "Btech", "Bca")
+print(courses)
+print(type(courses))
+
+print(courses[1])               # accessing an item
+
+print(len(courses))              # length of the tuple
+print(courses.count("Bsc"))     # counting occurrences
+print(courses.index("Btech"))   # finding index of an item
+
+for course in courses:        # looping through a tuple
+    print(course)
+
+for id, course in enumerate(courses):
+    print(id, course)
+
+print('----------------------')
+
+
+# dictionary operations
+student = {
+    "name": "Yogesh",
+    "age": 20,
+    "student_id": "12345",
+    "subjects": ["Math", "Science", "History"]
+}
+print(student)
+print(type(student))
+
+print(student["name"])               # accessing a value
+print(student.get("age"))           # accessing a value using get()
+print(len(student))     # length of the dictionary
+
+student["age"] = 21                 # updating a value
+print(student)
+
+student.pop("student_id")            # removing a key-value pair
+print(student)                       #del also can be used
+# clear() can be used to empty the dictionary
+
+for item in student:          # looping through keys
+    print(item)
+
+for key, value in student.items():   # looping through key-value pairs
+    print(key, value)
+
+print('----------------------')
+
+
